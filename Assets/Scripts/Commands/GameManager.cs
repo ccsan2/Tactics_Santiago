@@ -29,4 +29,12 @@ public class GameManager : MonoBehaviour
             activeCommand.Execute();
         }
     }
+    void ActiveFaction()
+    {
+
+    }
+    void EndTurn()
+    {
+
+    }
 }

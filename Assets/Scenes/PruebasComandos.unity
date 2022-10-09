@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014b8fe6f401636489abc7f261d9367e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedCharacter: {fileID: 790618946}
 --- !u!4 &406956045
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 790618944}
   - component: {fileID: 790618945}
+  - component: {fileID: 790618946}
   m_Layer: 0
   m_Name: Recluta
   m_TagString: Untagged
@@ -400,6 +402,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &790618946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790618943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f7f09e1c23c4d458d6feff2813ff89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1179645995
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332741153}
   - component: {fileID: 1332741154}
+  - component: {fileID: 1332741155}
   m_Layer: 0
   m_Name: Recluta2
   m_TagString: Untagged
@@ -568,6 +583,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1332741155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332741152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f7f09e1c23c4d458d6feff2813ff89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1865823390
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865823391}
   - component: {fileID: 1865823392}
+  - component: {fileID: 1865823393}
   m_Layer: 0
   m_Name: REcluta3
   m_TagString: Untagged
@@ -652,3 +680,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1865823393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865823390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f7f09e1c23c4d458d6feff2813ff89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
