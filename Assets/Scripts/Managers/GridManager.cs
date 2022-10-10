@@ -15,6 +15,10 @@ public class Grid2 : MonoBehaviour
 
     private Dictionary<Vector2, Tile> _tiles;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +31,7 @@ public class Grid2 : MonoBehaviour
     {
         
     }
-    void GenerateGrid()
+   public  void GenerateGrid()
     {
         for (int x = 0; x < _width; x++)
         {
@@ -47,6 +51,8 @@ public class Grid2 : MonoBehaviour
         _cam.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -10);
 
     }
+
+    GameManager.Instance.ChangeState(SpawnHeroes);
 
     public  Tile GetTilePosition(Vector2 pos)
     {
