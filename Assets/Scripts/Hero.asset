@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hero
   m_EditorClassIdentifier: 
   name: Hero
-  actionPoints: 3
-  health: 5
-  attackPoints: 5
-  defensePoints: 5
+  actionPoints: 10
+  health: 10
+  attackPoints: 10
+  defensePoints: 10

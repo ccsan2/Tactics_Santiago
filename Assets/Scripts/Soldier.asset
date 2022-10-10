@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Soldier
   m_EditorClassIdentifier: 
   name: Soldier
-  actionPoints: 3
-  health: 3
-  attackPoints: 3
-  defensePoints: 2
+  actionPoints: 5
+  health: 5
+  attackPoints: 5
+  defensePoints: 5

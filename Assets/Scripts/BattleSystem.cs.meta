@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fbbe8ab09f316b44086413af5906e3c3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SoldierPrefab: {fileID: 7227283426585127813, guid: 37bb60d804a9f6c4cbca8c011ca58ced, type: 3}
+  - HeroPrefab: {fileID: 9008679964564233991, guid: 4988273449ba816488965d7aacf63363, type: 3}
+  - initSoldier1: {instanceID: 0}
+  - initSoldier2: {instanceID: 0}
+  - initHero: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

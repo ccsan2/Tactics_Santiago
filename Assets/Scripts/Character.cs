@@ -11,4 +11,8 @@ public class Character : ScriptableObject
     public float attackPoints;
     public float defensePoints;
 
+    public void attack ()
+    {
+        Debug.Log("atacarrrrrrr");
+    }
 }
