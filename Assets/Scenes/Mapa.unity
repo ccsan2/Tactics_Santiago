@@ -169,10 +169,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _width: 16
   _height: 9
-  _tileColina: {fileID: 3778372747217170388, guid: 2d30a76182fffcc4999c52869ae25118, type: 3}
-  _tilemar: {fileID: 1264517345345148650, guid: 2206fabc435b66d4c8ba11064b32112b, type: 3}
-  "_tileMonta\xF1a": {fileID: 2372062940000088887, guid: f4b01ee47fc92924186ff4e918528d43, type: 3}
-  _tileSize: 1
+  _grassTile: {fileID: 3778372747217170388, guid: 2d30a76182fffcc4999c52869ae25118, type: 3}
+  _mountainTile: {fileID: 2372062940000088887, guid: f4b01ee47fc92924186ff4e918528d43, type: 3}
+  _seaTile: {fileID: 1264517345345148650, guid: 2206fabc435b66d4c8ba11064b32112b, type: 3}
   _cam: {fileID: 1200916849}
 --- !u!1 &865888863
 GameObject:

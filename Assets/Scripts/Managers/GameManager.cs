@@ -6,29 +6,31 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public GameState Gamestate;
+    public GameState GameState;
 
-    private void Awake()
+    void Awake()
     {
         Instance = this;
-
     }
 
-    private void Start()
+    void Start()
     {
-        ChangeState(Gamestate.GenerateGrid);
+        ChangeState(GameState.GenerateGrid);
     }
+
     public void ChangeState(GameState newState)
     {
-        GameState=newState;
+        GameState = newState;
         switch (newState)
         {
             case GameState.GenerateGrid:
-                GridManager.Instance.GenerateGrid;
+                GridManager.Instance.GenerateGrid();
                 break;
             case GameState.SpawnHeroes:
+                UnitManager.Instance.SpawnHeroes();
                 break;
             case GameState.SpawnEnemies:
+                UnitManager.Instance.SpawnEnemies();
                 break;
             case GameState.HeroesTurn:
                 break;
@@ -37,15 +39,14 @@ public class GameManager : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
         }
-
-     }
-   public enum GameState
-    {
-        GenerateGrid = 0,
-        SpawnHeroes= 1,
-        SpawnEnemies= 2,
-        HeroesTurn=3,
-        EnemiesTurn=4,
-
     }
+}
+
+public enum GameState
+{
+    GenerateGrid = 0,
+    SpawnHeroes = 1,
+    SpawnEnemies = 2,
+    HeroesTurn = 3,
+    EnemiesTurn = 4
 }
