@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4564920216025475106
+--- !u!1001 &4743955329162810445
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -62,14 +62,14 @@ PrefabInstance:
     - target: {fileID: 2557777408990666579, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1126416857, guid: 4c106ef7d39abef4f80a59372399ab34, type: 3}
+      objectReference: {fileID: 1143658395, guid: 4c106ef7d39abef4f80a59372399ab34, type: 3}
     - target: {fileID: 2557777408990666579, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4523661694705145263, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
       propertyPath: m_Name
-      value: Tilemar
+      value: TileMountain
       objectReference: {fileID: 0}
     - target: {fileID: 4822745149942809148, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -81,34 +81,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
---- !u!1 &116702817758199181 stripped
+--- !u!1 &5505495015320817548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 987019153484520385, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
+  m_PrefabInstance: {fileID: 4743955329162810445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7109749209669716766 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2557777408990666579, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
+  m_PrefabInstance: {fileID: 4743955329162810445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9156570541348553186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4523661694705145263, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
-  m_PrefabInstance: {fileID: 4564920216025475106}
+  m_PrefabInstance: {fileID: 4743955329162810445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1264517345345148650
+--- !u!114 &2372062940000088887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116702817758199181}
+  m_GameObject: {fileID: 9156570541348553186}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ccd19d350f80f243abf8329bd448041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _basecolor: {r: 0, g: 0, b: 0, a: 0}
-  _offsetcolor: {r: 0, g: 0, b: 0, a: 0}
-  _renderer: {fileID: 2028545903242704753}
-  _highLight: {fileID: 3669099374216033251}
---- !u!212 &2028545903242704753 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2557777408990666579, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
-  m_PrefabInstance: {fileID: 4564920216025475106}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3669099374216033251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 987019153484520385, guid: daf70daf67dacca4f843aeb56a5bd6e2, type: 3}
-  m_PrefabInstance: {fileID: 4564920216025475106}
-  m_PrefabAsset: {fileID: 0}
+  _renderer: {fileID: 7109749209669716766}
+  _highLight: {fileID: 5505495015320817548}

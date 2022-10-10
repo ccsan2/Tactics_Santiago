@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Grid2 : MonoBehaviour
 {
+
+    public static Grid2 Instance;
     [SerializeField] private int _width, _height;
 
-    [SerializeField] private Tile _tilePrefab;
+    [SerializeField] private Tile _tileColina, _tilemar, _tileMontaña;
     [SerializeField] private float _tileSize;
 
     [SerializeField] private Transform _cam;
+
+    private Dictionary<Vector2, Tile> _tiles;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +33,27 @@ public class Grid2 : MonoBehaviour
         {
             for (int y = 0; y < _height; x++)
             {
-                var SpawnedTile = Instantiate(_tilePrefab, new Vector3(x, y), Quaternion.identity);
+                var _randomTile = Random.Range(0, 6) == 3 ? _tileMontaña : _tileColina ;
+               
+
+                var SpawnedTile = Instantiate(_randomTile, new Vector3(x, y), Quaternion.identity);
                 SpawnedTile.name = $"Tile{x},{y}";
-                var isOffset = (x % 2 == 0&& y% 2!=0) || (x % 2 != 0 && y % 2 == 0);
-                SpawnedTile.Init(isOffset);
+                
+                SpawnedTile.Init(x,y);
+
+                _tiles [new Vector2 (x, y)] = SpawnedTile;
             }
         }
         _cam.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -10);
 
+    }
+
+    public  Tile GetTilePosition(Vector2 pos)
+    {
+        if (_tiles.TryGetValue (pos, out Tile tile))
+        {
+            return tile;
+        }
+        return null;    
     }
 }
